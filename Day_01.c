@@ -10,3 +10,60 @@ sum = n*(n+1)/2;
 printf("the sum upto %d is %d",n,sum);
     return 0;
 }
+
+
+// write a prgrm to print the multiplcn table of a given number....
+
+#include <stdio.h>
+int main(){
+    int n;
+    printf("enter the num\n");
+    scanf("%d",&n);
+    for(int i=1;i<11;i++){
+        printf("%d X %d = %d\n",n,i,n*i);
+    }
+    return 0;
+}
+
+
+// write a prgrm to print factorial of a number ...
+
+#include<stdio.h>
+
+int main(){
+    int n , product = 1 ;
+    printf("enter the num\n");
+    scanf("%d",&n);
+    
+    for(int i=n;i>0;i--){
+        product = product*i;
+    }
+    printf(" the factorial of %d is %d",n,product);
+
+
+    return 0;
+}
+
+
+
+// write a prgrm to count digits of a number....
+
+#include<stdio.h>
+
+int main(){
+    int num , count = 0;
+    printf("enter the num\n");
+    scanf("%d",&num);
+
+    if (num ==0){
+        count = 1;
+    }
+
+    while(num!=0){
+        num = num/10;
+        count = count + 1;
+
+    }
+    printf("the num contains %d digits",count);
+    return 0;
+}
